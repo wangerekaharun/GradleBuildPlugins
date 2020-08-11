@@ -16,15 +16,24 @@ object Versions {
     const val testRunner = "1.1.1"
     const val espresso = "3.2.0"
     const val annotation = "1.1.0"
+
+    // Gradle Plugins
+    const val ktlint = "9.3.0"
+    const val detekt = "1.10.0"
+    const val dokka = "0.10.1"
 }
 
 object BuildPlugins {
     //All the build plugins are added here
     const val androidGradlePlugin = "com.android.tools.build:gradle:${Versions.buildToolsVersion}"
     const val kotlinGradlePlugin = "org.jetbrains.kotlin:kotlin-gradle-plugin:${Versions.kotlin}"
+    const val androidLibrary = "com.android.library"
+    const val ktlintPlugin = "org.jlleitschuh.gradle.ktlint"
+    const val detektPlugin = "io.gitlab.arturbosch.detekt"
+    const val dokkaPlugin = "org.jetbrains.dokka"
     const val androidApplication = "com.android.application"
-    const val kotlinAndroid = "kotlin-android"
-    const val kotlinAndroidExtensions = "kotlin-android-extensions"
+    const val kotlinAndroid = "org.jetbrains.kotlin.android"
+    const val kotlinAndroidExtensions = "org.jetbrains.kotlin.android.extensions"
 }
 object Libraries {
     //Any Library is added here
