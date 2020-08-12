@@ -28,6 +28,13 @@ allprojects {
     }
 }
 
+
+tasks.dokka {
+    outputFormat = "html"
+    outputDirectory = "$buildDir/dokka"
+}
+
+
 subprojects {
     apply(plugin = BuildPlugins.detektPlugin)
     detekt {
