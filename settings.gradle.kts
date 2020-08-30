@@ -8,8 +8,8 @@ pluginManagement {
 
     plugins {
         id("com.android.application") version "4.0.1"
-        id("org.jetbrains.kotlin.android") version "1.3.72"
-        id("org.jetbrains.kotlin.android.extensions") version "1.3.72"
+        id("org.jetbrains.kotlin.android") version "1.4.0"
+        id("org.jetbrains.kotlin.android.extensions") version "1.4.0"
         id("com.android.library") version "4.0.1"
         id("com.google.firebase.crashlytics") version "2.1.0"
     }

@@ -17,7 +17,6 @@ allprojects {
         maven(url = "https://jitpack.io")
         maven("https://dl.bintray.com/kotlin/kotlin-eap")
     }
-    // TODO Try android setup from Joeren Mols
     apply(plugin = BuildPlugins.dokkaPlugin)
     apply(plugin = BuildPlugins.ktlintPlugin)
     ktlint {
@@ -28,13 +27,6 @@ allprojects {
         }
     }
 }
-
-
-tasks.dokka {
-    outputFormat = "html"
-    outputDirectory = "$buildDir/dokka"
-}
-
 
 subprojects {
     apply(plugin = BuildPlugins.detektPlugin)
