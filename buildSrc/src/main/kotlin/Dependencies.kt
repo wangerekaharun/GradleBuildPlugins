@@ -21,6 +21,7 @@ object Versions {
     const val ktlint = "9.3.0"
     const val detekt = "1.10.0"
     const val dokka = "0.10.1"
+    const val gradleVersionsPlugin = "0.28.0"
 }
 
 object BuildPlugins {
@@ -34,6 +35,7 @@ object BuildPlugins {
     const val androidApplication = "com.android.application"
     const val kotlinAndroid = "org.jetbrains.kotlin.android"
     const val kotlinAndroidExtensions = "org.jetbrains.kotlin.android.extensions"
+    const val gradleVersionsPlugin = "com.github.ben-manes.versions"
 }
 object Libraries {
     //Any Library is added here
