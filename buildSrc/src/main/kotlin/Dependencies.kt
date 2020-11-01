@@ -4,24 +4,24 @@ object Versions {
     const val code = 1
 
     //Version codes for all the libraries
-    const val kotlin = "1.4.0"
-    const val buildToolsVersion = "3.5.3"
+    const val kotlin = "1.4.10"
+    const val buildToolsVersion = "4.1.0"
     const val appCompat = "1.3.0-alpha02"
-    const val constraintLayout = "2.0.1"
-    const val ktx = "1.5.0-alpha02"
-    const val material = "1.3.0-alpha02"
+    const val constraintLayout = "2.0.4"
+    const val ktx = "1.5.0-alpha04"
+    const val material = "1.3.0-alpha03"
 
     //Version codes for all the test libraries
-    const val junit4 = "4.13"
-    const val testRunner = "1.3.0"
-    const val espresso = "3.3.0"
+    const val junit4 = "4.13.1"
+    const val testRunner = "1.3.1-alpha02"
+    const val espresso = "3.4.0-alpha02"
     const val annotation = "1.2.0-alpha01"
 
     // Gradle Plugins
-    const val ktlint = "9.3.0"
-    const val detekt = "1.12.0"
-    const val dokka = "1.4.0-rc-24"
-    const val gradleVersionsPlugin = "0.29.0"
+    const val ktlint = "9.4.1"
+    const val detekt = "1.14.2"
+    const val dokka = "1.4.10.2"
+    const val gradleVersionsPlugin = "0.33.0"
 }
 
 object BuildPlugins {
