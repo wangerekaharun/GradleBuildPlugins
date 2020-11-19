@@ -8,7 +8,7 @@ object Versions {
     const val buildToolsVersion = "4.1.0"
     const val appCompat = "1.3.0-alpha02"
     const val constraintLayout = "2.0.4"
-    const val ktx = "1.5.0-alpha04"
+    const val ktx = "1.5.0-alpha05"
     const val material = "1.3.0-alpha03"
 
     //Version codes for all the test libraries
@@ -20,9 +20,9 @@ object Versions {
     // Gradle Plugins
     const val ktlint = "9.4.1"
     const val detekt = "1.14.2"
-    const val spotless = "5.3.0"
+    const val spotless = "5.8.2"
     const val dokka = "1.4.10.2"
-    const val gradleVersionsPlugin = "0.33.0"
+    const val gradleVersionsPlugin = "0.36.0"
 }
 
 object BuildPlugins {
