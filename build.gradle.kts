@@ -40,8 +40,8 @@ subprojects {
         kotlin {
             target("**/*.kt")
             licenseHeaderFile(
-                    rootProject.file("${project.rootDir}/spotless/copyright.kt"),
-                    "^(package|object|import|interface)"
+                rootProject.file("${project.rootDir}/spotless/copyright.kt"),
+                "^(package|object|import|interface)"
             )
         }
     }

@@ -50,6 +50,5 @@ android {
         androidTestImplementation(TestLibraries.annotation)
 
         testImplementation(TestLibraries.junit4)
-
     }
 }
