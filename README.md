@@ -34,3 +34,5 @@ Refer to this [issue](https://github.com/gradle/gradle/issues/10248), if you get
         * [Spotless](https://github.com/diffplug/spotless) - format java, groovy, markdown and license headers using gradle.
         * [Dokka](https://github.com/Kotlin/dokka) - a documentation engine for Kotlin, performing the same function as javadoc for Java.
         * [jacoco](https://github.com/jacoco/jacoco) - a Code Coverage Library
+        
+For reference, here's a detailed explanation of the approach of the plugin configuration in this project - [A Day with an Elephant in the Room: Configuring Gradle Plugins.](https://medium.com/@harunwangereka/a-day-with-an-elephant-in-the-room-configuring-gradle-plugins-3331b0be64c7)
