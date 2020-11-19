@@ -23,6 +23,7 @@ object Versions {
     const val spotless = "5.8.2"
     const val dokka = "1.4.10.2"
     const val gradleVersionsPlugin = "0.36.0"
+    const val jacoco = "0.8.4"
 }
 
 object BuildPlugins {
@@ -38,6 +39,7 @@ object BuildPlugins {
     const val kotlinAndroid = "org.jetbrains.kotlin.android"
     const val kotlinAndroidExtensions = "org.jetbrains.kotlin.android.extensions"
     const val gradleVersionsPlugin = "com.github.ben-manes.versions"
+    const val jacocoAndroid = "com.hiya.jacoco-android"
 }
 
 object Libraries {

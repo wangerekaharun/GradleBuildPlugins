@@ -3,7 +3,13 @@ plugins {
     id(BuildPlugins.kotlinAndroid)
     id(BuildPlugins.kotlinAndroidExtensions)
     id(BuildPlugins.ktlintPlugin)
+    id(BuildPlugins.jacocoAndroid)
 }
+
+jacoco {
+    toolVersion = Versions.jacoco
+}
+
 android {
 
     compileSdkVersion(AndroidSDK.compile)
@@ -19,6 +25,15 @@ android {
         versionCode = Versions.code
         versionName = Versions.name
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    testOptions {
+        execution = "androidx_test_orchestrator"
+        animationsDisabled = true
+        unitTests.apply {
+            isReturnDefaultValues = true
+            isIncludeAndroidResources = true
+        }
     }
 
     compileOptions {

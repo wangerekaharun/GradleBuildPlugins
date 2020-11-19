@@ -12,13 +12,16 @@ plugins {
 }
 
 allprojects {
+
     repositories {
         google()
         jcenter()
         maven(url = "https://jitpack.io")
         maven("https://dl.bintray.com/kotlin/kotlin-eap")
     }
+
     apply(plugin = BuildPlugins.dokkaPlugin)
+
     apply(plugin = BuildPlugins.ktlintPlugin)
     ktlint {
         android.set(true)
@@ -29,13 +32,25 @@ allprojects {
     }
 }
 
+buildscript {
+    val kotlinVersion by extra("1.4.10")
+    val jacocoVersion by extra("0.2")
+
+    dependencies {
+        classpath("org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlinVersion")
+        classpath("com.hiya:jacoco-android:$jacocoVersion")
+    }
+}
+
 subprojects {
+
     apply(plugin = BuildPlugins.detektPlugin)
-    apply(plugin = BuildPlugins.spotlessPlugin)
     detekt {
         config = files("${project.rootDir}/detekt.yml")
         parallel = true
     }
+
+    apply(plugin = BuildPlugins.spotlessPlugin)
     spotless {
         kotlin {
             target("**/*.kt")
