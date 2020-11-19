@@ -9,6 +9,9 @@ android {
     compileSdkVersion(AndroidSDK.compile)
     buildToolsVersion("30.0.2")
 
+    android.buildFeatures.dataBinding = true
+    android.buildFeatures.viewBinding = true
+
     defaultConfig {
         applicationId = "ke.co.appslab.gradleplugins"
         minSdkVersion(AndroidSDK.min)
@@ -16,6 +19,15 @@ android {
         versionCode = Versions.code
         versionName = Versions.name
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    compileOptions {
+        sourceCompatibility = JavaVersion.VERSION_1_8
+        targetCompatibility = JavaVersion.VERSION_1_8
+    }
+
+    kotlinOptions {
+        jvmTarget = "1.8"
     }
 
     buildTypes {
