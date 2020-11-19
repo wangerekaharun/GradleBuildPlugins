@@ -5,8 +5,10 @@ plugins {
     id(BuildPlugins.ktlintPlugin)
 }
 android {
+
     compileSdkVersion(AndroidSDK.compile)
-    buildToolsVersion("30.0.1")
+    buildToolsVersion("30.0.2")
+
     defaultConfig {
         applicationId = "ke.co.appslab.gradleplugins"
         minSdkVersion(AndroidSDK.min)
@@ -30,9 +32,12 @@ android {
         implementation(Libraries.ktxCore)
         implementation(Libraries.constraintLayout)
         implementation(Libraries.materialComponents)
-        testImplementation(TestLibraries.junit4)
+
         androidTestImplementation(TestLibraries.testRunner)
         androidTestImplementation(TestLibraries.espresso)
         androidTestImplementation(TestLibraries.annotation)
+
+        testImplementation(TestLibraries.junit4)
+
     }
 }

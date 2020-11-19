@@ -20,6 +20,7 @@ object Versions {
     // Gradle Plugins
     const val ktlint = "9.4.1"
     const val detekt = "1.14.2"
+    const val spotless = "5.3.0"
     const val dokka = "1.4.10.2"
     const val gradleVersionsPlugin = "0.33.0"
 }
@@ -31,6 +32,7 @@ object BuildPlugins {
     const val androidLibrary = "com.android.library"
     const val ktlintPlugin = "org.jlleitschuh.gradle.ktlint"
     const val detektPlugin = "io.gitlab.arturbosch.detekt"
+    const val spotlessPlugin = "com.diffplug.spotless"
     const val dokkaPlugin = "org.jetbrains.dokka"
     const val androidApplication = "com.android.application"
     const val kotlinAndroid = "org.jetbrains.kotlin.android"
@@ -61,8 +63,4 @@ object TestLibraries {
     const val testRunner = "androidx.test:runner:${Versions.testRunner}"
     const val espresso = "androidx.test.espresso:espresso-core:${Versions.espresso}"
     const val annotation = "androidx.annotation:annotation:${Versions.annotation}"
-}
-
-object BuildModules {
-    const val app = ":app"
 }

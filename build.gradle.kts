@@ -2,6 +2,7 @@
 plugins {
     id(BuildPlugins.ktlintPlugin) version Versions.ktlint
     id(BuildPlugins.detektPlugin) version Versions.detekt
+    id(BuildPlugins.spotlessPlugin) version Versions.spotless
     id(BuildPlugins.androidLibrary) apply false
     id(BuildPlugins.androidApplication) apply false
     id(BuildPlugins.kotlinAndroid) apply false
@@ -30,7 +31,17 @@ allprojects {
 
 subprojects {
     apply(plugin = BuildPlugins.detektPlugin)
+    apply(plugin = BuildPlugins.spotlessPlugin)
     detekt {
         parallel = true
+    }
+    spotless {
+        kotlin {
+            target("**/*.kt")
+            licenseHeaderFile(
+                    rootProject.file("${project.rootDir}/spotless/copyright.kt"),
+                    "^(package|object|import|interface)"
+            )
+        }
     }
 }
