@@ -22,7 +22,7 @@ object Versions {
     const val detekt = "1.14.2"
     const val spotless = "5.3.0"
     const val dokka = "1.4.10.2"
-    const val gradleVersionsPlugin = "0.33.0"
+    const val gradleVersionsPlugin = "0.36.0"
     const val jacoco = "0.8.4"
 }
 
