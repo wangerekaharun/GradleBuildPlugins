@@ -12,7 +12,7 @@ jacoco {
 
 android {
 
-    compileSdkVersion(AndroidSDK.compile)
+    compileSdkVersion(AndroidSdk.compileSdkVersion)
     buildToolsVersion("30.0.2")
 
     android.buildFeatures.dataBinding = true
@@ -20,15 +20,14 @@ android {
 
     defaultConfig {
         applicationId = "ke.co.appslab.gradleplugins"
-        minSdkVersion(AndroidSDK.min)
-        targetSdkVersion(AndroidSDK.target)
-        versionCode = Versions.code
-        versionName = Versions.name
+        minSdkVersion(AndroidSdk.minSdkVersion)
+        targetSdkVersion(AndroidSdk.targetSdkVersion)
+        versionCode = AndroidSdk.versionCode
+        versionName = AndroidSdk.versionName
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
 
     testOptions {
-        execution = "androidx_test_orchestrator"
         animationsDisabled = true
         unitTests.apply {
             isReturnDefaultValues = true

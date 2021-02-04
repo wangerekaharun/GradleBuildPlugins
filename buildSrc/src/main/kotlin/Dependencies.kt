@@ -1,7 +1,4 @@
 object Versions {
-    //Version code and name for the application
-    const val name = "1.0"
-    const val code = 1
 
     //Version codes for all the libraries
     const val kotlin = "1.4.10"
@@ -28,8 +25,6 @@ object Versions {
 
 object BuildPlugins {
     //All the build plugins are added here
-    const val androidGradlePlugin = "com.android.tools.build:gradle:${Versions.buildToolsVersion}"
-    const val kotlinGradlePlugin = "org.jetbrains.kotlin:kotlin-gradle-plugin:${Versions.kotlin}"
     const val androidLibrary = "com.android.library"
     const val ktlintPlugin = "org.jlleitschuh.gradle.ktlint"
     const val detektPlugin = "io.gitlab.arturbosch.detekt"
@@ -52,17 +47,19 @@ object Libraries {
     const val materialComponents = "com.google.android.material:material:${Versions.material}"
 }
 
-object AndroidSDK {
-    //minimum, compile and target SDK versions
-    const val min = 21
-    const val compile = 30
-    const val target = compile
-}
-
 object TestLibraries {
     //any test library is added here
     const val junit4 = "junit:junit:${Versions.junit4}"
     const val testRunner = "androidx.test:runner:${Versions.testRunner}"
     const val espresso = "androidx.test.espresso:espresso-core:${Versions.espresso}"
     const val annotation = "androidx.annotation:annotation:${Versions.annotation}"
+}
+
+
+object AndroidSdk {
+    const val minSdkVersion = 21
+    const val compileSdkVersion = 30
+    const val targetSdkVersion = compileSdkVersion
+    const val versionCode = 1
+    const val versionName = "1.0"
 }
