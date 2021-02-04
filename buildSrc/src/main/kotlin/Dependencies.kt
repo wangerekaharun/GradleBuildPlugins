@@ -2,7 +2,7 @@ object Versions {
 
     //Version codes for all the libraries
     const val kotlin = "1.4.21"
-    const val buildToolsVersion = "4.1.0"
+    const val buildToolsVersion = "4.1.1"
     const val appCompat = "1.3.0-alpha02"
     const val constraintLayout = "2.0.4"
     const val ktx = "1.5.0-alpha05"
@@ -32,7 +32,7 @@ object BuildPlugins {
     const val dokkaPlugin = "org.jetbrains.dokka"
     const val androidApplication = "com.android.application"
     const val kotlinAndroid = "org.jetbrains.kotlin.android"
-    const val kotlinAndroidExtensions = "org.jetbrains.kotlin.android.extensions"
+    const val kotlinParcelizePlugin = "org.jetbrains.kotlin.plugin.parcelize"
     const val gradleVersionsPlugin = "com.github.ben-manes.versions"
     const val jacocoAndroid = "com.hiya.jacoco-android"
 }
