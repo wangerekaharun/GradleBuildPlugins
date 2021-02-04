@@ -3,22 +3,22 @@ object Versions {
     //Version codes for all the libraries
     const val kotlin = "1.4.21"
     const val buildToolsVersion = "4.1.1"
-    const val appCompat = "1.3.0-alpha02"
-    const val constraintLayout = "2.0.4"
-    const val ktx = "1.5.0-alpha05"
-    const val material = "1.3.0-alpha03"
+    const val appCompat = "1.3.0-beta01"
+    const val constraintLayout = "2.1.0-alpha2"
+    const val ktx = "1.5.0-beta01"
+    const val material = "1.3.0-rc01"
 
     //Version codes for all the test libraries
     const val junit4 = "4.13.1"
-    const val testRunner = "1.3.1-alpha02"
-    const val espresso = "3.4.0-alpha02"
-    const val annotation = "1.2.0-alpha01"
+    const val testRunner = "1.3.1-alpha03"
+    const val espresso = "3.4.0-alpha03"
+    const val annotation = "1.2.0-beta01"
 
     // Gradle Plugins
     const val ktlint = "9.4.1"
     const val detekt = "1.14.2"
-    const val spotless = "5.8.2"
-    const val dokka = "1.4.10.2"
+    const val spotless = "5.9.0"
+    const val dokka = "1.4.20"
     const val gradleVersionsPlugin = "0.36.0"
     const val jacoco = "0.8.4"
 }
