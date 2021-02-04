@@ -1,7 +1,7 @@
 object Versions {
 
     //Version codes for all the libraries
-    const val kotlin = "1.4.10"
+    const val kotlin = "1.4.21"
     const val buildToolsVersion = "4.1.0"
     const val appCompat = "1.3.0-alpha02"
     const val constraintLayout = "2.0.4"
