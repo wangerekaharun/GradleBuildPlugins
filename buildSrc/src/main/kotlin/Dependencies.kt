@@ -4,7 +4,7 @@ object Versions {
     const val kotlin = "1.4.21"
     const val buildToolsVersion = "4.1.1"
     const val appCompat = "1.3.0-rc01"
-    const val constraintLayout = "2.1.0-beta01"
+    const val constraintLayout = "2.1.0-beta02"
     const val ktx = "1.6.0-alpha02"
     const val material = "1.4.0-alpha02"
 
@@ -15,8 +15,8 @@ object Versions {
     const val annotation = "1.3.0-alpha01"
 
     // Gradle Plugins
-    const val ktlint = "9.4.1"
-    const val detekt = "1.16.0"
+    const val ktlint = "10.0.0"
+    const val detekt = "1.17.0-RC2"
     const val spotless = "5.12.4"
     const val dokka = "1.4.32"
     const val gradleVersionsPlugin = "0.38.0"
