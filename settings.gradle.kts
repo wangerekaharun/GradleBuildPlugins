@@ -1,15 +1,15 @@
 pluginManagement {
     repositories {
-        jcenter()
+        mavenCentral()
         google()
         gradlePluginPortal()
         maven("https://dl.bintray.com/kotlin/kotlin-eap")
     }
 
     plugins {
-        id("com.android.application") version "4.1.1"
-        id("org.jetbrains.kotlin.android") version "1.4.21"
-        id("com.android.library") version "4.1.1"
+        id("com.android.application") version "4.2.2"
+        id("org.jetbrains.kotlin.android") version "1.5.20"
+        id("com.android.library") version "4.2.2"
         id("com.google.firebase.crashlytics") version "2.1.0"
     }
 

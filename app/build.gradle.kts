@@ -13,8 +13,6 @@ jacoco {
 android {
 
     compileSdkVersion(AndroidSdk.compileSdkVersion)
-    buildToolsVersion("30.0.2")
-
     android.buildFeatures.dataBinding = true
     android.buildFeatures.viewBinding = true
 
