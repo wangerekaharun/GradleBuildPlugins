@@ -12,14 +12,14 @@ jacoco {
 
 android {
 
-    compileSdkVersion(AndroidSdk.compileSdkVersion)
+    compileSdk = AndroidSdk.compileSdkVersion
     android.buildFeatures.dataBinding = true
     android.buildFeatures.viewBinding = true
 
     defaultConfig {
         applicationId = "ke.co.appslab.gradleplugins"
-        minSdkVersion(AndroidSdk.minSdkVersion)
-        targetSdkVersion(AndroidSdk.targetSdkVersion)
+        minSdk = AndroidSdk.minSdkVersion
+        targetSdk = AndroidSdk.targetSdkVersion
         versionCode = AndroidSdk.versionCode
         versionName = AndroidSdk.versionName
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"

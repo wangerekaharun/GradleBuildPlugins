@@ -16,7 +16,6 @@ allprojects {
         google()
         mavenCentral()
         maven(url = "https://jitpack.io")
-        maven("https://dl.bintray.com/kotlin/kotlin-eap")
     }
 
     apply(plugin = BuildPlugins.dokkaPlugin)
@@ -32,7 +31,7 @@ allprojects {
 }
 
 buildscript {
-    val kotlinVersion by extra("1.5.20")
+    val kotlinVersion by extra("1.5.21")
     val jacocoVersion by extra("0.2")
 
     dependencies {
