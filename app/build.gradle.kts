@@ -38,10 +38,6 @@ android {
         targetCompatibility = JavaVersion.VERSION_1_8
     }
 
-    kotlinOptions {
-        jvmTarget = "1.8"
-    }
-
     buildTypes {
         getByName("release") {
             isMinifyEnabled = false
@@ -51,7 +47,6 @@ android {
 
     dependencies {
         implementation(fileTree(mapOf("dir" to "libs", "include" to listOf("*.jar"))))
-        implementation(Libraries.kotlinStandardLibrary)
         implementation(Libraries.appCompat)
         implementation(Libraries.ktxCore)
         implementation(Libraries.constraintLayout)
